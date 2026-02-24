@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-serif: var(--font-nunito-sans);
-  --font-sans: var(--font-nunito-sans);
+  --font-serif: var(--font-noto-serif);
+  --font-sans: var(--font-noto-serif);
   --color-background: #ffffff;
   --color-surface: #ffffff;
   --color-foreground: #2d2d2d;
@@ -15,10 +15,24 @@
 body {
   background: var(--color-background);
   color: var(--color-foreground);
-  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --color-background: #0f1115;
+  --color-surface: #0f1115;
+  --color-foreground: #e8ebf2;
+  --color-muted: #a6afc2;
+  --color-accent: #8fb0f2;
+  --color-accent-hover: #adc6ff;
+  --color-border: #2a3347;
+}
+
+html,
+body {
+  color-scheme: light dark;
 }
 
 /* Main content container */
@@ -58,6 +72,12 @@ body {
   align-items: center;
 }
 
+.site-nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
 .site-nav a {
   font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.95rem;
@@ -71,6 +91,45 @@ body {
 .site-nav a:hover,
 .site-nav a.active {
   color: var(--color-foreground);
+}
+
+.theme-toggle {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  line-height: 1.2;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface));
+}
+
+.theme-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Page content */
@@ -121,7 +180,7 @@ a:hover {
   gap: 1.25rem;
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--color-border);
 }
 
 .social-links a {
@@ -182,7 +241,7 @@ a:hover {
 
 .project-card {
   padding: 1.75rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -243,7 +302,7 @@ a:hover {
   font-weight: 500;
   margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--color-border);
   color: var(--color-foreground);
 }
 
@@ -321,7 +380,7 @@ a:hover {
   width: 100%;
   height: calc(100vh - 220px);
   min-height: 860px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border);
   border-radius: 8px;
 }
 
@@ -340,6 +399,10 @@ a:hover {
 
   .site-nav {
     gap: 1.25rem;
+  }
+
+  .site-nav-wrap {
+    gap: 0.75rem;
   }
 
   .page-content {

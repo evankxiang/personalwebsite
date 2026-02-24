@@ -1,28 +1,8 @@
 export default function Blog() {
     const posts = [
         {
-            date: "Feb 10, 2026",
-            title: "Getting Started with Personal Websites",
-            slug: "#",
-        },
-        {
-            date: "Jan 25, 2026",
-            title: "Reflections on Learning to Code",
-            slug: "#",
-        },
-        {
-            date: "Jan 8, 2026",
-            title: "My Favorite Tools for Productivity",
-            slug: "#",
-        },
-        {
-            date: "Dec 15, 2025",
-            title: "What I Learned Building My First Full-Stack App",
-            slug: "#",
-        },
-        {
-            date: "Nov 20, 2025",
-            title: "A Beginner's Guide to Systems Design",
+            date: "March 1, 2026",
+            title: "A Reflection on High School: Science Competitions",
             slug: "#",
         },
     ];

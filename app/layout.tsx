@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
 import Header from "./components/Header";
 import "./globals.css";
 
-const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans",
+const notoSerif = Noto_Serif({
+  variable: "--font-noto-serif",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
@@ -21,8 +21,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={nunitoSans.variable}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={notoSerif.variable}
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                try {
+                  var stored = localStorage.getItem("theme");
+                  var theme = stored === "dark" || stored === "light"
+                    ? stored
+                    : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                  document.documentElement.setAttribute("data-theme", theme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body className={notoSerif.className}>
         <div className="site-container">
           <Header />
           <main className="page-content">{children}</main>

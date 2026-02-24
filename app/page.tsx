@@ -35,18 +35,18 @@ export default function Home() {
         />
       </div>
       <div className="social-links">
-        <a href="mailto:evan@example.com">
+        <a href="mailto:ekxiang@mit.edu">
           ✉ Email
         </a>
         <a
-          href="https://github.com/evanxiang"
+          href="https://github.com/evankxiang"
           target="_blank"
           rel="noopener noreferrer"
         >
           ⌘ GitHub
         </a>
         <a
-          href="https://linkedin.com/in/evanxiang"
+          href="https://linkedin.com/in/evankxiang"
           target="_blank"
           rel="noopener noreferrer"
         >
