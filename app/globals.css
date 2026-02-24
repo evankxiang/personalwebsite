@@ -416,7 +416,7 @@ a:hover {
 .scioly-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 620px;
+  min-width: 900px;
 }
 
 .scioly-table th,
@@ -488,6 +488,6 @@ a:hover {
   }
 
   .scioly-table {
-    min-width: 560px;
+    min-width: 760px;
   }
 }
