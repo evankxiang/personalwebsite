@@ -6,21 +6,21 @@ export default function Home() {
       <div className="home-layout">
         <div className="home-bio">
           <p>
-            Hi! I&apos;m Evan, a current prefrosh at the Massachusetts Institute of Technology (MIT), planning on studying Electrical Engineering (6-5) and Biology (7). I&apos;m broadly interested in 
-            synthetic biology, medicine, and machine learning. I also enjoy dabbling in biotech/health policy and am currently reading about biosafety in the age of generative AI and open source biology.
+            Hi! I&apos;m Evan, a current prefrosh at the Massachusetts Institute of Technology (MIT), planning on studying Electrical Engineering with Computing (6-5) and Biology (7). I&apos;m broadly interested in 
+            synthetic biology, medicine, and machine learning. I also enjoy dabbling in biotech/health policy and am currently studying biosafety in the age of generative AI and open source biology.
           </p>
           <p>
-            In high school, I competed in various academic competitions. 
-            I was a two-time USA Biology Olympiad Camper/Silver Medalist, placing Top 8 in the country. 
-            Throughout high school, I also conducted research under Dr. Kun-Che Chang of the UPMC Vision Institute, elucidating and studying a non-SMAD therapeutic pathway against posterior capsule opacification, a common disorder post-cataract surgery. 
-            I competed at the Regeneron International Science and Engineering Fair (ISEF), receiving a 3rd Award in Biomedical Sciences. 
+            In HS, I competed in various academic competitions, primarily related to biology and earth science 
+            I was a two-time USA Biology Olympiad Camper/Silver Medalist, placing Top 8 in the country, as well as a USA Earth Science Olympiad Camper.  
+            Throughout HS, I also conducted research at the UPMC Vision Institute, elucidating and studying a non-SMAD therapeutic pathway against PCO. 
+            Through this, I competed at the Regeneron International Science and Engineering Fair (ISEF), receiving a 3rd Award in Biomedical/Health Sciences. 
           </p>
           <p>
-            When I&apos;m not studying biology, you can find me reading works from various authors (Borges and Ishiguro are my favorites), attempting to sleep, and putting together various contraptions using my assortment of microcontrollers. 
+            When I&apos;m not studying biology, you can find me reading works from various authors (Borges and Ishiguro are my favorites), attempting to sleep, and adding to my collection of 9,000+ origami cranes. 
           </p>
           <p>
             Feel free to check out my{" "}
-            <a href="/projects">projects</a>,{" "}
+            <a href="/scioly">SciOly tests</a>,{" "}
             read my <a href="/blog">blog</a>, or take a look at
             my <a href="/cv">CV</a>.
           </p>
