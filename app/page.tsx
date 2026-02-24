@@ -22,7 +22,7 @@ export default function Home() {
             Feel free to check out my{" "}
             <a href="/scioly">SciOly tests</a>,{" "}
             read my <a href="/blog">blog</a>, or take a look at
-            my <a href="/cv">CV</a>.
+            my <a href="/cv">CV</a>. Feel free to email me at ekxiang [at] mit [dot] edu for any inquiries.
           </p>
         </div>
         <Image
