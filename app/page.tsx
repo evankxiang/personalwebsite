@@ -6,7 +6,7 @@ export default function Home() {
       <div className="home-layout">
         <div className="home-bio">
           <p>
-            Hi! I&apos;m Evan, a current prefrosh at the Massachusetts Institute of Technology (MIT), planning on studying Electrical Engineering with Computing (6-5) and Biology (7). I&apos;m broadly interested in 
+            Hi! I&apos;m Evan, a prefrosh at the Massachusetts Institute of Technology (MIT) planning on studying Electrical Engineering (6-5) and Biology (7). I&apos;m broadly interested in 
             synthetic biology, medicine, and machine learning. I also enjoy dabbling in biotech/health policy and am currently studying biosafety in the age of generative AI and open source biology.
           </p>
           <p>
