@@ -389,6 +389,59 @@ a:hover {
   color: var(--color-muted);
 }
 
+/* SciOly page */
+.scioly-section {
+  margin-bottom: 2.5rem;
+}
+
+.scioly-section h2 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+  color: var(--color-foreground);
+}
+
+.scioly-section p {
+  margin-bottom: 0.9rem;
+  color: var(--color-muted);
+}
+
+.scioly-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.scioly-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.scioly-table th,
+.scioly-table td {
+  text-align: left;
+  padding: 0.8rem 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.92rem;
+}
+
+.scioly-table th {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--color-foreground);
+  background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface));
+}
+
+.scioly-table td {
+  color: var(--color-muted);
+}
+
+.scioly-table tr:last-child td {
+  border-bottom: none;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .site-header {
@@ -432,5 +485,9 @@ a:hover {
   .cv-pdf-frame {
     height: calc(100vh - 200px);
     min-height: 620px;
+  }
+
+  .scioly-table {
+    min-width: 560px;
   }
 }
