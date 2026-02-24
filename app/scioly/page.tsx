@@ -176,13 +176,10 @@ export default function SciOly() {
       <section className="scioly-section">
         <h2>About My SciOly Work</h2>
         <p>
-          I use this page to share what I have been working on in Science
-          Olympiad, including the events I compete in, how I prepare, and
-          resources I have written to help teammates.
+          [Will Fill In Later]
         </p>
         <p>
-          Update this section with your team role, competition highlights, and
-          any event-specific notes you want to showcase.
+          [TBD]
         </p>
       </section>
 
@@ -196,25 +193,23 @@ export default function SciOly() {
                 <th>Tournament</th>
                 <th>Event</th>
                 <th>Role</th>
-                <th>Link</th>
               </tr>
             </thead>
             <tbody>
               {tests.map((test) => (
                 <tr key={`${test.season}-${test.tournament}-${test.event}`}>
                   <td>{test.season}</td>
-                  <td>{test.tournament}</td>
-                  <td>{test.event}</td>
-                  <td>{test.role}</td>
                   <td>
                     {test.link ? (
                       <a href={test.link} target="_blank" rel="noopener noreferrer">
-                        Open
+                        {test.tournament}
                       </a>
                     ) : (
-                      <span>TBD</span>
+                      <span>{test.tournament}</span>
                     )}
                   </td>
+                  <td>{test.event}</td>
+                  <td>{test.role}</td>
                 </tr>
               ))}
             </tbody>
