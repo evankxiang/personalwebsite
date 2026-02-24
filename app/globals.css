@@ -408,7 +408,7 @@ a:hover {
 }
 
 .scioly-table-wrap {
-  overflow-x: auto;
+  overflow-x: visible;
   border: 1px solid var(--color-border);
   border-radius: 8px;
 }
@@ -416,7 +416,7 @@ a:hover {
 .scioly-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 900px;
+  table-layout: fixed;
 }
 
 .scioly-table th,
@@ -425,6 +425,8 @@ a:hover {
   padding: 0.8rem 0.9rem;
   border-bottom: 1px solid var(--color-border);
   font-size: 0.92rem;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .scioly-table th {
@@ -487,7 +489,9 @@ a:hover {
     min-height: 620px;
   }
 
-  .scioly-table {
-    min-width: 760px;
+  .scioly-table th,
+  .scioly-table td {
+    padding: 0.65rem 0.55rem;
+    font-size: 0.84rem;
   }
 }
