@@ -17,6 +17,7 @@ export default function Header() {
     { href: "/blog", label: "Blog" },
     { href: "/projects", label: "Projects" },
     { href: "/scioly", label: "SciOly" },
+    { href: "/resources", label: "Uses" },
     { href: "/cv", label: "CV" },
   ];
 
@@ -49,7 +50,6 @@ export default function Header() {
               <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" />
             </svg>
           </span>
-          <span>Theme</span>
         </button>
       </div>
     </header>

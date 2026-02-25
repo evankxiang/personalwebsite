@@ -94,19 +94,17 @@ body {
 }
 
 .theme-toggle {
-  font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
   color: var(--color-foreground);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 999px;
-  padding: 0.45rem 0.95rem;
-  line-height: 1.2;
+  border-radius: 9999px;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 1;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
+  display: grid;
+  place-items: center;
   transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
