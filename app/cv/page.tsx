@@ -1,7 +1,6 @@
 export default function CV() {
   return (
     <>
-      <h1 className="page-title">Curriculum Vitae</h1>
       <section className="cv-viewer">
         <iframe
           src="/websiteresume.pdf#zoom=page-width&view=Fit"

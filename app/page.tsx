@@ -11,9 +11,9 @@ export default function Home() {
           </p>
           <p>
             In HS, I competed in various academic competitions.
-            I was a two-time USA Biology Olympiad Camper/Silver Medalist, placing Top 8 in the country, as well as a USA Earth Science Olympiad Camper.  
+            I was a two-time USA Biology Olympiad Camper & Silver Medalist, placing Top 8 in the country, as well as a USA Earth Science Olympiad Camper.  
             I also conducted research at the UPMC Vision Institute, elucidating and studying a non-SMAD therapeutic pathway against PCO. 
-            Through this, I competed at the Regeneron International Science and Engineering Fair (ISEF), receiving a 3rd Award in Biomedical/Health Sciences. 
+            Through this, I competed at the Regeneron International Science and Engineering Fair (ISEF), receiving a 3rd Award in Biomedical & Health Sciences. 
           </p>
           <p>
             When I&apos;m not studying biology, you can find me reading works from various authors (Borges, Ishiguro, and Cixin are my favorites), attempting to sleep, and adding to my collection of 9,000+ origami cranes. 
