@@ -176,10 +176,10 @@ export default function SciOly() {
       <section className="scioly-section">
         <h2>About My SciOly Work</h2>
         <p>
-          [Will Fill In Later]
+          For those who are not aware: Science Olympiad (SciOly) is a team-based competition in which students compete in 23 events across various fields of STEM, from the regional to national level. Students participate in test events, conduct lab experiments, and construct devices. Events are divided into study and build events. Division B and C denotes middle school and high school respectively. 
         </p>
         <p>
-          [TBD]
+          I've had the amazing opportunity to compete in Science Olympiad since 6th grade, qualifying for the National Tournament twice. Science Olympiad has given me some of most amazing opportunities, and I am forever grateful for the people who've guided me and for the people I've met. Since 8th grade, I've volunteered my time to write various exams for Science Olympiad tournaments, volunteering to write exams in a variety of topics, including biology, earth science, and physics. The table below is a compilation of all exams that I have written. Any exam that is released (either publicly or privately) is linked through the tournament name. If the tournament is for an official sanctioned non-invitational tournament (i.e. Regionals or States), I will/do not release a copy of the exam. Feel free to contact me on Discord (@banarnarsaurus) for notice of errata or if you have any questions! 
         </p>
       </section>
 
