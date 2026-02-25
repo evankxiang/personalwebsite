@@ -1,7 +1,7 @@
 export default function Resources() {
   const resources = [
-    { name: "[TBD]", note: "[TBD]", link: "#" },
-    { name: "[TBD]", note: "[TBD]", link: "#" },
+    { name: "Computer System", note: "I use two computers, a Mac Pro (M2) as a daily driver and a custom PC (R7 3700X, RTX3070) for any more hardcore computational tasks. Any more computational tasks are offloaded by SSH'ing into the Pitt HTC and utilizing a compute core or by training in Google Collab. ", link: "#" },
+    { name: "Note Taking Tools", note: "I've been between a lot of these. As of now, I use an iPad for any notes about subjects like economics or literature, while I use paper for any more computational subjects/math-heavy subjects (e.g. CS, Math, Physics). My favorite pencil is currently the Kuru Toga (Metal Edition) and my favorite pen is the Pentel G2.", link: "#" },
   ];
 
   return (
