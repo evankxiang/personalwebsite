@@ -1,7 +1,7 @@
 export default function Resources() {
   const resources = [
-    { name: "Example Resource 1", note: "Add your description here.", link: "#" },
-    { name: "Example Resource 2", note: "Add your description here.", link: "#" },
+    { name: "[TBD]", note: "[TBD]", link: "#" },
+    { name: "[TBD]", note: "[TBD]", link: "#" },
   ];
 
   return (
