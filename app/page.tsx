@@ -16,7 +16,7 @@ export default function Home() {
             Through this, I competed at the Regeneron International Science and Engineering Fair (ISEF), receiving a 3rd Award in Biomedical & Health Sciences. 
           </p>
           <p>
-            When I&apos;m not studying biology, you can find me reading works from various authors (Borges, Ishiguro, and Cixin are my favorites), attempting to sleep, and adding to my collection of 9,000+ origami cranes. 
+            When I&apos;m not studying biology, you can find me reading works from various authors (Borges, Ishiguro, and Liu are my favorites), attempting to sleep, and adding to my collection of 9,000+ origami cranes. 
           </p>
           <p>
             Feel free to check out my{" "}
