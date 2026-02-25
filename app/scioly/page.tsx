@@ -174,7 +174,6 @@ export default function SciOly() {
       <h1 className="page-title">SciOly</h1>
 
       <section className="scioly-section">
-        <h2>About My SciOly Work</h2>
         <p>
           For those who are not aware: Science Olympiad (SciOly) is a team-based competition in which students compete in 23 events across various fields of STEM, from the regional to national level. Students participate in test events, conduct lab experiments, and construct devices. Events are divided into study and build events. Division B and C denotes middle school and high school respectively. 
         </p>
