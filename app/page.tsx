@@ -12,7 +12,7 @@ export default function Home() {
           <p>
             In HS, I competed in various academic competitions.
             I was a two-time USA Biology Olympiad Camper & Silver Medalist, placing Top 8 in the country, as well as a USA Earth Science Olympiad Camper.  
-            I also conducted research at the UPMC Vision Institute, elucidating and studying a non-SMAD therapeutic pathway against PCO. 
+            I also conducted research at the UPMC Vision Institute, elucidating and studying a chromatin remodeling pathway in the lens involved in the epithelial-mesenchymal transition. 
             Through this, I competed at the Regeneron International Science and Engineering Fair (ISEF), receiving a 3rd Award in Biomedical & Health Sciences. 
           </p>
           <p>
