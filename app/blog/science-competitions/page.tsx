@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "A Reflection on High School: Science Competitions | Evan Xiang",
+    title: "Against High School Science Competitions | Evan Xiang",
     description:
-        "An essay on the excessive emphasis on competition in high school and the inequities amplified by science competitions and olympiads.",
+        "Against the idea of Olympiads and Science Fair",
 };
 
 export default function ScienceCompetitionsPost() {
@@ -11,9 +11,9 @@ export default function ScienceCompetitionsPost() {
         <article className="blog-post">
             <header className="blog-post-header">
                 <h1 className="blog-post-title">
-                    A Reflection on High School: Science Competitions
+                    Against High School Science Competitions
                 </h1>
-                <time className="blog-post-date">March 1, 2026</time>
+                <time className="blog-post-date">March 6, 2026</time>
             </header>
 
             <div className="blog-post-body">
