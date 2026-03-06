@@ -230,6 +230,45 @@ a:hover {
   color: var(--color-accent-hover);
 }
 
+/* Blog post */
+.blog-post {
+  max-width: 680px;
+}
+
+.blog-post-header {
+  margin-bottom: 2.5rem;
+}
+
+.blog-post-title {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-date {
+  display: block;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.blog-post-body p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+  color: var(--color-foreground);
+}
+
+.blog-post-callout {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.25rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
 /* Projects */
 .projects-grid {
   display: flex;

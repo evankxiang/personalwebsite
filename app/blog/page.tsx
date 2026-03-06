@@ -3,7 +3,7 @@ export default function Blog() {
         {
             date: "March 1, 2026",
             title: "A Reflection on High School: Science Competitions",
-            slug: "#",
+            slug: "/blog/science-competitions",
         },
     ];
 
