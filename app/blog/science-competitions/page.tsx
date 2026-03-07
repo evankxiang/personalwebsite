@@ -101,11 +101,7 @@ export default function ScienceCompetitionsPost() {
                     Olympiad finalists took a similar prep course. How is it fair that
                     students of higher socioeconomic status, who have likely experienced
                     easier childhoods and easier lives, are essentially afforded yet another
-                    proverbial power-up. In the 25 year history of the USA Biology Olympiad,
-                    with more than 400+ finalists afforded the opportunity to spend two
-                    weeks immersed in this author&apos;s opinion, one of the best STEM
-                    experiences you may experience, there has not been a single person of
-                    color
+                    proverbial power-up.
                 </p>
 
                 <p className="blog-post-callout">
