@@ -2,7 +2,7 @@ export default function Blog() {
     const posts = [
         {
             date: "March 6, 2026",
-            title: "Against High School Science Competitions",
+            title: "Against the Idea of High School Science Competitions",
             slug: "/blog/science-competitions",
         },
     ];
