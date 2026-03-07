@@ -17,14 +17,12 @@ export default function ScienceCompetitionsPost() {
             </header>
 
             <div className="blog-post-body">
-                <blockquote>
-                    <p>
-                        &ldquo;The function of education is to teach one to think
-                        intensively and to think critically. Intelligence plus
-                        character &mdash; that is the goal of true education.&rdquo;
-                        &mdash; Martin Luther King Jr.
-                    </p>
-                </blockquote>
+                <div className="blog-quote">
+                    &ldquo;The function of education is to teach one to think
+                    intensively and to think critically. Intelligence plus
+                    character &mdash; that is the goal of true education.&rdquo;
+                    <span className="blog-quote-author">&mdash; Martin Luther King Jr.</span>
+                </div>
 
                 <p>
                     We teach students that they shouldn&apos;t give into peer pressure,
