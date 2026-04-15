@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-serif: var(--font-noto-serif);
-  --font-sans: var(--font-noto-serif);
+  --font-serif: var(--font-newsreader);
+  --font-sans: var(--font-newsreader);
   --color-background: #ffffff;
   --color-surface: #ffffff;
   --color-foreground: #2d2d2d;
@@ -80,7 +80,7 @@ body {
 
 .site-nav a {
   font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--color-muted);
   text-decoration: none;
@@ -171,28 +171,36 @@ a:hover {
   font-size: 1.05rem;
 }
 
-/* Social links */
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
+/* Contact section */
+.contact-section {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border);
 }
 
-.social-links a {
+.contact-heading {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+  margin-bottom: 0.75rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.contact-links a {
   font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 0.9rem;
   color: var(--color-accent);
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
   transition: color 0.2s ease;
 }
 
-.social-links a:hover {
+.contact-links a:hover {
   color: var(--color-accent-hover);
 }
 
@@ -524,7 +532,7 @@ a:hover {
     height: 160px;
   }
 
-  .social-links {
+  .contact-links {
     justify-content: center;
   }
 

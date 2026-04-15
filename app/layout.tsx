@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Noto_Serif } from "next/font/google";
+import { Newsreader } from "next/font/google";
 import Header from "./components/Header";
 import "./globals.css";
 
-const notoSerif = Noto_Serif({
-  variable: "--font-noto-serif",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
@@ -24,7 +24,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={notoSerif.variable}
+      className={newsreader.variable}
     >
       <head>
         <script
@@ -43,7 +43,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={notoSerif.className}>
+      <body className={newsreader.className}>
         <div className="site-container">
           <Header />
           <main className="page-content">{children}</main>
