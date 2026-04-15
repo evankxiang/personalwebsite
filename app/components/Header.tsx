@@ -14,10 +14,10 @@ export default function Header() {
   };
 
   const navLinks = [
+    { href: "/resources", label: "About" },
     { href: "/blog", label: "Blog" },
     { href: "/projects", label: "Projects" },
     { href: "/scioly", label: "SciOly" },
-    { href: "/resources", label: "Uses" },
     { href: "/cv", label: "CV" },
   ];
 

@@ -6,7 +6,7 @@
   --color-background: #ffffff;
   --color-surface: #ffffff;
   --color-foreground: #2d2d2d;
-  --color-muted: #6b7280;
+  --color-muted: #2d2d2d;
   --color-accent: #5b7aad;
   --color-accent-hover: #4a6699;
   --color-border: #c5cee8;
@@ -24,7 +24,7 @@ body {
   --color-background: #0f1115;
   --color-surface: #0f1115;
   --color-foreground: #e8ebf2;
-  --color-muted: #a6afc2;
+  --color-muted: #e8ebf2;
   --color-accent: #8fb0f2;
   --color-accent-hover: #adc6ff;
   --color-border: #2a3347;
@@ -33,6 +33,17 @@ body {
 html,
 body {
   color-scheme: light dark;
+}
+
+/* Particle background */
+.particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Main content container */
@@ -327,7 +338,7 @@ a:hover {
 
 .project-desc {
   font-size: 0.95rem;
-  color: var(--color-muted);
+  color: var(--color-foreground);
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
@@ -397,7 +408,7 @@ a:hover {
 
 .cv-item-desc {
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: var(--color-foreground);
   line-height: 1.6;
 }
 
@@ -461,7 +472,7 @@ a:hover {
 
 .scioly-section p {
   margin-bottom: 0.9rem;
-  color: var(--color-muted);
+  color: var(--color-foreground);
 }
 
 .scioly-table-wrap {
@@ -494,11 +505,69 @@ a:hover {
 }
 
 .scioly-table td {
-  color: var(--color-muted);
+  color: var(--color-foreground);
 }
 
 .scioly-table tr:last-child td {
   border-bottom: none;
+}
+
+/* About page */
+.about-intro {
+  margin-bottom: 2.5rem;
+}
+
+.about-intro p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--color-foreground);
+}
+
+.about-section {
+  margin-bottom: 2.25rem;
+}
+
+.about-section h2 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-foreground);
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.about-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.65rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-foreground);
+}
+
+.about-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
 }
 
 /* Responsive */
