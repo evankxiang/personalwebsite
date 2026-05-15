@@ -169,33 +169,19 @@ export default function SciOly() {
     return a.tournament.localeCompare(b.tournament);
   });
 
+
+
   return (
     <>
       <h1 className="page-title">SciOly</h1>
 
       <section className="scioly-section">
-        <p>
-          For those who are not aware: Science Olympiad (SciOly) is a team-based competition in which students compete in 23 events across various fields of STEM, from the regional to national level. Students participate in test events, conduct lab experiments, and construct devices. Events are divided into study and build events. Division B and C denotes middle school and high school respectively. 
-        </p>
-        <p>
-          I&apos;ve had the amazing opportunity to compete in Science Olympiad
-          since 6th grade, qualifying for the National Tournament twice. SciOly
-          has given me some of most amazing opportunities, and I am forever
-          grateful for the people who&apos;ve guided me and for the people I&apos;ve
-          met. Since 8th grade, I&apos;ve volunteered my time to write various exams
-          for tournaments, covering a variety of topics, including biology, earth
-          science, and physics. The table below is a compilation of all exams
-          that I have written. Any exam that is released (either publicly or
-          privately) is linked through the tournament name. For an official
-          sanctioned non-invitational tournament (i.e. Regionals or States), I
-          do/will not release a copy of the exam. Feel free to contact me on
-          Discord (@banarnarsaurus) for notice of errata or if you have any
-          questions!
+        <p className="project-desc">
+          Science Olympiad is a team-based STEM competition spanning 23 events, covering every area of science, run at the regional, state, and national level. I competed since 6th grade, qualifying for Nationals twice. Since 8th grade I&apos;ve written exams for invitationals across molecular biology, earth science, and physics. Any linked tests are publicly released; I do not post any exams from sanctioned tournaments (Regionals, States) are not posted. DM me on Discord (@banarnarsaurus) for errata or questions.
         </p>
       </section>
 
       <section className="scioly-section">
-        <h2>Tests I&apos;ve Written</h2>
         <div className="scioly-table-wrap">
           <table className="scioly-table">
             <thead>
@@ -203,7 +189,6 @@ export default function SciOly() {
                 <th>Season</th>
                 <th>Tournament</th>
                 <th>Event</th>
-                <th>Role</th>
               </tr>
             </thead>
             <tbody>
@@ -220,7 +205,6 @@ export default function SciOly() {
                     )}
                   </td>
                   <td>{test.event}</td>
-                  <td>{test.role}</td>
                 </tr>
               ))}
             </tbody>

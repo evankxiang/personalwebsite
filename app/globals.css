@@ -299,7 +299,7 @@ a:hover {
 }
 
 .project-card-image {
-  width: 160px;
+  width: 120px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -515,7 +515,7 @@ a:hover {
 }
 
 .scioly-table td {
-  color: var(--color-muted);
+  color: var(--color-foreground);
 }
 
 .scioly-table tr:last-child td {
