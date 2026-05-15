@@ -18,7 +18,7 @@ export default function Home() {
             Feel free to check out my{" "}
             <a href="/scioly">SciOly tests</a>,{" "}
             read my <a href="/blog">blog</a>, or see my{" "}
-            <a href="/websiteresume.pdf" target="_blank" rel="noopener noreferrer">resume</a>! Email me at ekx [at] mit [dot] edu for inquiries.
+            <a href="/cv">resume</a>! Email me at ekx [at] mit [dot] edu for inquiries.
           </p>
         </div>
         <Image
