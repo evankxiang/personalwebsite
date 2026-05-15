@@ -289,59 +289,84 @@ a:hover {
 .projects-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .project-card {
-  padding: 1.75rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
-.project-card:hover {
-  border-color: var(--color-border);
-  box-shadow: 0 2px 12px rgba(91, 122, 173, 0.08);
+.project-card-image {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.project-card-content {
+  flex: 1;
 }
 
 .project-name {
-  font-family: var(--font-serif), Georgia, serif;
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
   color: var(--color-foreground);
+  margin-bottom: 0.2rem;
 }
 
-.project-name a {
-  color: var(--color-accent);
-  text-decoration: none;
-}
-
-.project-name a:hover {
-  color: var(--color-accent-hover);
+.project-subtitle {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-muted);
+  margin-bottom: 0.6rem;
 }
 
 .project-desc {
-  font-size: 0.95rem;
-  color: var(--color-muted);
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  color: var(--color-foreground);
+  line-height: 1.65;
+  margin: 0 0 0.6rem 0;
 }
 
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.project-links {
+  font-size: 0.85rem;
 }
 
-.project-tag {
-  font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  background: var(--color-background);
+.project-links a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--color-accent-hover);
+}
+
+.project-link-sep {
   color: var(--color-muted);
-  border-radius: 4px;
-  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-card-image {
+    width: 100%;
+    max-width: 240px;
+  }
 }
 
 /* CV page */
