@@ -17,8 +17,7 @@ export default function Header() {
     { href: "/blog", label: "Blog" },
     { href: "/projects", label: "Projects" },
     { href: "/scioly", label: "SciOly" },
-    { href: "/resources", label: "Uses" },
-    { href: "/cv", label: "CV" },
+    { href: "/cv", label: "Resume" },
   ];
 
   return (

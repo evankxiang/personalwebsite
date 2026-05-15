@@ -175,7 +175,8 @@ a:hover {
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border);
@@ -186,14 +187,17 @@ a:hover {
   font-size: 0.9rem;
   color: var(--color-accent);
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
   transition: color 0.2s ease;
 }
 
 .social-links a:hover {
   color: var(--color-accent-hover);
+}
+
+.social-sep {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  user-select: none;
 }
 
 /* Blog list */
