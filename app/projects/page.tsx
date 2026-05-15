@@ -9,6 +9,14 @@ export default function Projects() {
       links: [{ label: "isef page", url: "https://isef.net/project/bmed083-a-novel-signaling-pathway-to-target-lens-fibrosis" }],
     },
     {
+      name: "Conditional VAE-Based Representation Learning Pipeline for Trajectory Analysis of BDNF Concentration and Behavioral Outcomes Post-Pediatric TBI",
+      subtitle: "UPMC Children's Hospital",
+      description:
+        "Created an easy-to-use pipeline via conditional VAEs to learn latent features present within trajectories of brain-derived neurotrophic factor measurements in pediatric patients. Determined that trajectories were able to correlate to behavioral outcomes post-injury. Pipeline used in multiple NIH-funded studies at UPMC Children's Hospital.",
+      image: "/Pairplot.png",
+      links: [],
+    },
+    {
       name: "High-Throughput Detection of Risk Factors to Sudden Cardiac Arrest in Youth Athletes",
       subtitle: "arXiv 2024",
       description:
