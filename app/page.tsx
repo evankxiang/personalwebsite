@@ -27,19 +27,28 @@ export default function Home() {
         <div className="rail-row">
           <span className="rail-k">Contact</span>
           <span className="rail-v">ekx [at] mit [dot] edu</span>
+          <div className="social-links">
+            <a href="mailto:ekxiang@mit.edu">Email</a>
+            <span className="social-sep">/</span>
+            <a href="https://linkedin.com/in/evankxiang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span className="social-sep">/</span>
+            <a href="https://github.com/evankxiang" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span className="social-sep">/</span>
+            <a href="https://orcid.org/0009-0002-1224-9076" target="_blank" rel="noopener noreferrer">ORCiD</a>
+          </div>
         </div>
       </aside>
 
       <div className="home-body">
         <div className="home-bio">
           <p>
-            Hi! I&apos;m an incoming freshman at MIT planning on studying AI and Biology. I&apos;m currently interested in synthetic biology and biological frontier models (e.g. Evo2). I also enjoy dabbling in biotech policy, primarily in the realm of biosecurity.
+            Hi! I&apos;m Evan, an incoming freshman at MIT planning on studying Electrical Engineering and Biology. I&apos;m currently interested in laboratory automation, synthetic biology, biological design tools, and biosecurity. Otherwise, I enjoy reading about interpretability, frontier model development, and optimized inference.
           </p>
           <p>
-            In HS, I was a two-time USA Biology Olympiad and USA Earth Science Olympiad camper, placing top 8 in the country. I also competed at ISEF, winning a grand award for my research at Pitt regarding chromatin remodeling in the eye.
+            In HS, I was a two-time USA Biology Olympiad &amp; USA Earth Science Olympiad National Finalist, placing top 8 in the country. I also competed at ISEF, winning a grand award for my research at Pitt regarding chromatin remodeling in the eye.
           </p>
           <p>
-            When I&apos;m not studying, you can find me reading works from various authors (Borges, Ishiguro, Liu etc.), sidequesting, producing exothermic reactions, or adding to my collection of 9,000+ origami cranes.
+            When I&apos;m not studying, you can find me reading works from various authors (Borges, Ishiguro, Liu etc.), posting on Beli, producing exothermic reactions, or adding to my collection of 9,000+ origami cranes.
           </p>
           <p>
             Feel free to check out my{" "}
@@ -47,15 +56,6 @@ export default function Home() {
             read my <a href="/blog">blog</a>, or see my{" "}
             <a href="/cv">resume</a>!
           </p>
-        </div>
-        <div className="social-links">
-          <a href="mailto:ekxiang@mit.edu">Email</a>
-          <span className="social-sep">/</span>
-          <a href="https://linkedin.com/in/evankxiang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <span className="social-sep">/</span>
-          <a href="https://github.com/evankxiang" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <span className="social-sep">/</span>
-          <a href="https://orcid.org/0009-0002-1224-9076" target="_blank" rel="noopener noreferrer">ORCiD</a>
         </div>
       </div>
     </div>

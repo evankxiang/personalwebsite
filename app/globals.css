@@ -231,13 +231,10 @@ a:hover {
 
 /* Social links — no top rule */
 .social-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.7rem;
-  margin-top: 2rem;
+  margin-top: 0.6rem;
   font-family: var(--font-mono), ui-monospace, monospace;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
+  white-space: nowrap;
 }
 
 .social-links a {
@@ -250,6 +247,7 @@ a:hover {
 
 .social-sep {
   color: var(--color-border);
+  margin: 0 0.28rem;
   user-select: none;
 }
 
