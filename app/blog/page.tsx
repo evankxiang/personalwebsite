@@ -9,6 +9,7 @@ export default function Blog() {
 
     return (
         <>
+            <h1 className="page-title">Writing</h1>
             <ul className="blog-list">
                 {posts.map((post, idx) => (
                     <li key={idx} className="blog-entry">

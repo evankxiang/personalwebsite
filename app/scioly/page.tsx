@@ -171,46 +171,49 @@ export default function SciOly() {
 
 
 
+  const groups: { event: string; rows: typeof tests }[] = [];
+  tests.forEach((test) => {
+    const last = groups[groups.length - 1];
+    if (last && last.event === test.event) last.rows.push(test);
+    else groups.push({ event: test.event, rows: [test] });
+  });
+
   return (
     <>
       <h1 className="page-title">SciOly</h1>
 
       <section className="scioly-section">
-        <p className="project-desc">
-          Science Olympiad is a team-based STEM competition spanning 23 events, covering every area of science, run at the regional, state, and national level. I competed since 6th grade, qualifying for Nationals twice. Since 8th grade I&apos;ve written exams for invitationals across molecular biology, earth science, and physics. Any linked tests are publicly released; I do not post any exams from sanctioned tournaments (Regionals, States) are not posted. DM me on Discord (@banarnarsaurus) for errata or questions.
+        <p className="scioly-intro">
+          Science Olympiad is a team-based STEM competition spanning 23 events, covering every area of science, run at the regional, state, and national level. I competed since 6th grade, qualifying for Nationals twice. Since 8th grade I&apos;ve written exams for invitationals across molecular biology, earth science, and physics. Any linked tests are publicly released; I do not post any exams from sanctioned tournaments (Regionals, States). DM me on Discord (@banarnarsaurus) for errata or questions.
         </p>
       </section>
 
-      <section className="scioly-section">
-        <div className="scioly-table-wrap">
-          <table className="scioly-table">
-            <thead>
-              <tr>
-                <th>Season</th>
-                <th>Tournament</th>
-                <th>Event</th>
-              </tr>
-            </thead>
-            <tbody>
-              {tests.map((test) => (
-                <tr key={`${test.season}-${test.tournament}-${test.event}`}>
-                  <td>{test.season}</td>
-                  <td>
-                    {test.link ? (
-                      <a href={test.link} target="_blank" rel="noopener noreferrer">
-                        {test.tournament}
-                      </a>
-                    ) : (
-                      <span>{test.tournament}</span>
-                    )}
-                  </td>
-                  <td>{test.event}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div className="event-groups">
+        {groups.map((group) => (
+          <div key={group.event} className="g-block">
+            <div className="g-head">
+              <h2 className="g-name">{group.event}</h2>
+              <span className="g-count">
+                {group.rows.length} test{group.rows.length > 1 ? "s" : ""}
+              </span>
+            </div>
+            {group.rows.map((row) => (
+              <div key={`${row.season}-${row.tournament}`} className="g-row">
+                <span className="g-year">{row.season}</span>
+                <span className="g-tourn">
+                  {row.link ? (
+                    <a href={row.link} target="_blank" rel="noopener noreferrer">
+                      {row.tournament}
+                    </a>
+                  ) : (
+                    row.tournament
+                  )}
+                </span>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </>
   );
 }

@@ -2,8 +2,35 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <div className="home-layout">
+    <div className="home-grid">
+      <aside className="home-rail">
+        <Image
+          src="/IMG_4689.jpeg"
+          alt="Evan Xiang"
+          width={240}
+          height={240}
+          className="rail-photo"
+          priority
+        />
+        <div className="rail-row">
+          <span className="rail-k">Now</span>
+          <span className="rail-v">Incoming Freshman, MIT</span>
+        </div>
+        <div className="rail-row">
+          <span className="rail-k">Studying</span>
+          <span className="rail-v rail-v-oneline">Biology &amp; Electrical Engineering</span>
+        </div>
+        <div className="rail-row">
+          <span className="rail-k">Focus</span>
+          <span className="rail-v">Synthetic biology, biological frontier models, laboratory automation, biosecurity policy</span>
+        </div>
+        <div className="rail-row">
+          <span className="rail-k">Contact</span>
+          <span className="rail-v">ekx [at] mit [dot] edu</span>
+        </div>
+      </aside>
+
+      <div className="home-body">
         <div className="home-bio">
           <p>
             Hi! I&apos;m an incoming freshman at MIT planning on studying AI and Biology. I&apos;m currently interested in synthetic biology and biological frontier models (e.g. Evo2). I also enjoy dabbling in biotech policy, primarily in the realm of biosecurity.
@@ -18,27 +45,19 @@ export default function Home() {
             Feel free to check out my{" "}
             <a href="/scioly">SciOly tests</a>,{" "}
             read my <a href="/blog">blog</a>, or see my{" "}
-            <a href="/cv">resume</a>! Email me at ekx [at] mit [dot] edu for inquiries.
+            <a href="/cv">resume</a>!
           </p>
         </div>
-        <Image
-          src="/IMG_4689.jpeg"
-          alt="Evan Xiang"
-          width={220}
-          height={220}
-          className="profile-image"
-          priority
-        />
+        <div className="social-links">
+          <a href="mailto:ekxiang@mit.edu">Email</a>
+          <span className="social-sep">/</span>
+          <a href="https://linkedin.com/in/evankxiang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span className="social-sep">/</span>
+          <a href="https://github.com/evankxiang" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span className="social-sep">/</span>
+          <a href="https://orcid.org/0009-0002-1224-9076" target="_blank" rel="noopener noreferrer">ORCiD</a>
+        </div>
       </div>
-      <div className="social-links">
-        <a href="mailto:ekxiang@mit.edu">Email</a>
-        <span className="social-sep">/</span>
-        <a href="https://linkedin.com/in/evankxiang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <span className="social-sep">/</span>
-        <a href="https://github.com/evankxiang" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <span className="social-sep">/</span>
-        <a href="https://orcid.org/0009-0002-1224-9076" target="_blank" rel="noopener noreferrer">ORCiD</a>
-      </div>
-    </>
+    </div>
   );
 }

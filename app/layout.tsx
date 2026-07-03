@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
-import { Noto_Serif } from "next/font/google";
+import { Spectral, Space_Mono } from "next/font/google";
 import Header from "./components/Header";
 import "./globals.css";
 
-const notoSerif = Noto_Serif({
-  variable: "--font-noto-serif",
+const spectral = Spectral({
+  variable: "--font-spectral",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+});
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={notoSerif.variable}
+      className={`${spectral.variable} ${spaceMono.variable}`}
     >
       <head>
         <script
@@ -43,7 +51,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={notoSerif.className}>
+      <body className={spectral.className}>
         <div className="site-container">
           <Header />
           <main className="page-content">{children}</main>
